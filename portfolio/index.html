@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harigovind.P | Web Developer & UI Designer</title>
+  <meta name="description" content="Personal portfolio of Harigovind.P — a web developer and UI/UX designer focused on clean design, performance, and real-world problem solving." />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500,700,800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ───────────────────────── NAV ───────────────────────── -->
+  <header class="nav" id="nav">
+    <nav class="nav__inner container">
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero__content container">
+        <div class="hero__text reveal">
+          <p class="hero__greeting">Hi there, I'm</p>
+          <h1 class="hero__name">Harigovind<span class="accent">.P</span></h1>
+          <h2 class="hero__tagline">I build modern web interfaces<br />and interactive UI experiences</h2>
+          <p class="hero__sub">Focused on clean design, performance, and real-world problem solving</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary" id="viewMyWork">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero__photo reveal reveal--delay">
+          <div class="hero__photo-glow"></div>
+          <img src="assets/images/profile.jpg" alt="Harigovind.P — Web Developer" class="hero__img" />
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── ABOUT ───────────────────────── -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">About <span class="accent">Me</span></h2>
+        <div class="about__card reveal">
+          <p>
+            I'm a passionate web developer and UI/UX designer with a sharp eye for clean, functional interfaces. 
+            I love turning complex ideas into elegant digital experiences that just <em>work</em>.
+          </p>
+          <p>
+            My focus lies at the intersection of great design and solid engineering — crafting sites that are 
+            fast, accessible, and visually memorable. I'm currently seeking internships and opportunities in 
+            frontend development and UI design.
+          </p>
+          <p>
+            When I'm not writing code, I'm sketching UI concepts, exploring design systems, or keeping up 
+            with the latest in web technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── SKILLS ───────────────────────── -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">My <span class="accent">Skills</span></h2>
+        <div class="skills__grid">
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">
+              <span class="skills__icon">⚡</span> Frontend
+            </h3>
+            <div class="skills__pills">
+              <span class="pill">HTML5</span>
+              <span class="pill">CSS3</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">CSS Animations</span>
+              <span class="pill">Flexbox & Grid</span>
+            </div>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">
+              <span class="skills__icon">🛠️</span> Tools
+            </h3>
+            <div class="skills__pills">
+              <span class="pill">Git & GitHub</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">Figma</span>
+              <span class="pill">Chrome DevTools</span>
+              <span class="pill">npm</span>
+            </div>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">
+              <span class="skills__icon">📚</span> Learning
+            </h3>
+            <div class="skills__pills">
+              <span class="pill pill--learning">React</span>
+              <span class="pill pill--learning">TypeScript</span>
+              <span class="pill pill--learning">Node.js</span>
+              <span class="pill pill--learning">Tailwind CSS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── PROJECTS ───────────────────────── -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">Featured <span class="accent">Projects</span></h2>
+        <div class="projects__grid">
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__icon">✅</span>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" title="Live Demo" target="_blank" rel="noopener">↗ Live</a>
+                <a href="#" class="project-card__link" title="GitHub" target="_blank" rel="noopener">⌥ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Task Manager</h3>
+            <p class="project-card__desc">A simple yet elegant task management app to add, delete, and track tasks with local storage persistence. Fully responsive with drag-to-reorder support.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__icon">🌤️</span>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" title="Live Demo" target="_blank" rel="noopener">↗ Live</a>
+                <a href="#" class="project-card__link" title="GitHub" target="_blank" rel="noopener">⌥ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Weather Dashboard</h3>
+            <p class="project-card__desc">A real-time weather app that fetches live data from the OpenWeather API. Users can search any city and see temperature, humidity, and 5-day forecasts.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__icon">🎨</span>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" title="Live Demo" target="_blank" rel="noopener">↗ Live</a>
+                <a href="#" class="project-card__link" title="GitHub" target="_blank" rel="noopener">⌥ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Color Palette Generator</h3>
+            <p class="project-card__desc">An interactive tool that generates harmonious color palettes from a base color. Supports hex/RGB export and one-click copy for designers and developers.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__icon">📖</span>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" title="Live Demo" target="_blank" rel="noopener">↗ Live</a>
+                <a href="#" class="project-card__link" title="GitHub" target="_blank" rel="noopener">⌥ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Recipe Finder</h3>
+            <p class="project-card__desc">A recipe search app powered by the MealDB API. Search by ingredient or meal name, view detailed instructions, and bookmark your favourites.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__icon">💬</span>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" title="Live Demo" target="_blank" rel="noopener">↗ Live</a>
+                <a href="#" class="project-card__link" title="GitHub" target="_blank" rel="noopener">⌥ GitHub</a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Quiz App</h3>
+            <p class="project-card__desc">A dynamic multiple-choice quiz application with a countdown timer, score tracker, and animated result screen. Questions loaded from a JSON dataset.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── CONTACT ───────────────────────── -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Let's <span class="accent">Connect</span></h2>
+        <p class="contact__sub reveal">I'm actively looking for web development and UI/UX internships. Feel free to reach out!</p>
+        <div class="contact__links reveal">
+          <a href="mailto:harigovind.p3921@gmail.com" class="contact__card" id="emailLink">
+            <span class="contact__card-icon">✉️</span>
+            <span class="contact__card-label">Email</span>
+            <span class="contact__card-value">harigovind.p3921@gmail.com</span>
+          </a>
+          <a href="https://github.com/HariHere1" class="contact__card" target="_blank" rel="noopener" id="githubLink">
+            <span class="contact__card-icon">🐙</span>
+            <span class="contact__card-label">GitHub</span>
+            <span class="contact__card-value">github.com/HariHere1</span>
+          </a>
+          <a href="https://www.linkedin.com/in/harigovind-p-385017291/?skipRedirect=true" class="contact__card" target="_blank" rel="noopener" id="linkedinLink">
+            <span class="contact__card-icon">💼</span>
+            <span class="contact__card-label">LinkedIn</span>
+            <span class="contact__card-value">linkedin.com/in/harigovind-p</span>
+          </a>
+        </div>
+        <a href="#" class="btn btn--primary contact__resume reveal" id="resumeBtn" download>
+          ⬇ Download Resume
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <span class="accent">Harigovind.P</span> — Designed & Built with ♥</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
