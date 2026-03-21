@@ -484,6 +484,58 @@ em {
   background: rgba(34, 197, 94, 0.15);
 }
 
+/* ── Skills icon grid (new) ── */
+.skills__icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.5rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: default;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.skill-icon:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(167,139,250,0.12);
+}
+
+.skill-icon i {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* GitHub icon is black by default — make it white on dark bg */
+.devicon-github-original {
+  color: #ffffff;
+}
+
+.skill-icon span {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .skills__icon-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .skills__icon-grid { grid-template-columns: repeat(6, 1fr); }
+}
+
 /* ============================================
    PROJECTS
    ============================================ */
@@ -581,6 +633,83 @@ em {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+
+/* ── Projects video cards (new) ── */
+.projects__video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.project-video-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.project-video-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(167,139,250,0.3);
+  box-shadow: var(--shadow);
+}
+
+.project-video-card__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0a0a0a;
+  overflow: hidden;
+}
+
+.project-video-card__media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-video-card__body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-video-card__title {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.project-video-card__desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.project-video-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-video-card__links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .projects__video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .tech-tag {
